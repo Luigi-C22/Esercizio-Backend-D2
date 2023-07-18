@@ -1,0 +1,18 @@
+GET http://localhost:5050/authors
+
+#####
+GET http://localhost:5050/authors/byName?authorName=Luigi
+
+#####
+
+POST http://localhost:5050/authors HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstname": "Luigi",
+    "surname": "Cian",
+    "email": "luis@gmail.com",
+    "birthdate": "22/02/1971",
+    "avatar": "3"
+}
+
