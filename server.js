@@ -6,7 +6,7 @@ require("dotenv").config();
 const PORT = 5050;
 
 //require delle routes
-//const postRoutes = require("./routes/posts");
+//const posts = require("./routes/posts");
 const authorsRoute = require("./routes/authors");
 
 const app = express();
@@ -18,7 +18,7 @@ app.use(express.json());
 
 
 //use routes 
-//app.use("/", postRoutes);
+//app.use("/", posts);
 app.use("/", authorsRoute);
 
 
